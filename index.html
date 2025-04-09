@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HouseFix Services</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>HouseFix Services</h1>
+    <p>Your trusted partner for home maintenance</p>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/painting.jpg" alt="Painting Service"/>
+        <h3>Painting</h3>
+        <p>Fresh coats and color consultations for a stunning home.</p>
+      </div>
+      <div class="card">
+        <img src="images/plumbing.jpg" alt="Plumbing Service"/>
+        <h3>Plumbing</h3>
+        <p>Leak fixes, installations, and maintenance done right.</p>
+      </div>
+      <div class="card">
+        <img src="images/electrical.jpg" alt="Electrical Service"/>
+        <h3>Electrical</h3>
+        <p>Safe wiring, lighting, and electrical repairs by pros.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="successMessage"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 HouseFix Services. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  <!-- ✅ Firebase Config (your firebase-config.js file) -->
+  <script src="firebase-config.js"></script>
+
+  <!-- ✅ Your main logic -->
+  <script src="script.js"></script>
+</body>
+</html>
